@@ -1,0 +1,83 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Section */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/* Navigation Bar */
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  background: #444;
+}
+
+nav ul li {
+  margin: 0.5rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+nav ul li a:hover {
+  background-color: #666;
+  border-radius: 5px;
+}
+
+/* Section Styling */
+section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Projects & Skills Grid */
+.projects, .skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.project, .skill {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  flex: 1 1 45%;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project, .skill {
+    flex: 1 1 100%;
+  }
+}
